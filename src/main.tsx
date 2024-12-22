@@ -1,3 +1,7 @@
-import { createRoot } from "react-dom/client";
+import ReactDOM from "react-dom/client";
+import AppRouter from "@routes/AppRouter";
+// styles
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@styles/global.css";
 
-createRoot(document.getElementById("root")!).render(<h1>Hello world</h1>);
+ReactDOM.createRoot(document.getElementById("root")!).render(<AppRouter />);
